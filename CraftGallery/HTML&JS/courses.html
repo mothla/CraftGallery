@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Craft Gallery</title>
+    <link href="courses.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&dis play=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome- free/4.7.0/css/fontawesome-free.min.css">
+    <script src="https://kit.fontawesome.com/3458dc9cc6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!------------- header ---------------> 
+    <section class="header-for-courses">
+        <nav>
+            <a href="home.html"> <img src="LOgo.png"> </a>
+             <div class="nav-links">
+                <ul>
+                    <li> <a href="home.html">Home</a> </li>
+                    <li> <a href="about.html">About</a> </li>
+                    <li> <a href="tickets.html">Tickets</a> </li>
+                    <li> <a href="courses.html" id="courses-1">COURSES</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1> OUR COURSES </h1>
+        </div>
+    </section>
+    <!--Courses-->
+    <section class="courses">
+        <h1>What Do We Offer?</h1> <p>
+            Are you interested in pottery and want to have an experience through informal delivery? Do you have an idea you want to put into practice?
+            Experienced tutors will develop your skills and help you reach your creative goals.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Beginners</h3>
+                <p>Sign Up for The Beginners Workshop!</p>
+                <form id=“BID” action="coursesB.php" method="post">
+                    <input type="text" name="bname" id="name" placeholder="Name" required> <br>
+                    <input type="email" name="bemail" id="email" placeholder="Email ex.:a@gmail.com" required> <br>
+                    <input type="text" name="bnumber" id="no" placeholder="05XXXXXXXX" required> <br>
+                    <input type="submit" value="Sign Up" id="Wsubmit" />
+                </form>
+            </div>
+            <div class="course-col">
+                <h3>Professionals</h3>
+                <p>Crafted just for Our Professionals!</p>
+                <form id=“PID” action="coursesP.php" method="post">
+
+                    <input type="text" name="pname" id="name" placeholder="Name" required /> <br>
+                    <input type="email" name="pemail" id="email" placeholder="Email ex.:a@gmail.com" required /> <br>
+                    <input type="text" name="pnumber" id="no" placeholder="05XXXXXXXX" required  /> <br>
+                    <input type="radio" id="4" name="phours" />
+                    <label for="4" style="font-size:12px;">4 Hours Program</label> <br />
+                    <input type="radio" id="6" name="phours" />
+                    <label for="6" style="font-size:12px;">6 Hours Program</label> <br />
+                    <input type="submit" value="Sign Up" id="Wsubmit" /> <br>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--------Footer------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            &copy; 2021 Craft Gallery Riyadh | webdesign by :
+            <ul>
+                <br>
+                <li> - Mothla Alnoshan </li>
+                <li> - Feda Alnafisah </li>
+                <li> - Areen Alquayid </li>
+                <li> - Sara Alghofaily </li>
+                <li> - Lamees Aloqlan </li>
+            </ul>
+        </p>
+        <br>
+        <div class="icons-fot">
+            <i class="fa fa-facebook" ></i>
+            <a href="https://twitter.com/craftgallery_sa?s=21"><i class="fa fa-twitter" ></i></a>
+            <a href="https://instagram.com/craftgallery.sa?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+            <i class="fa fa-envelope"></i>
+        </div>
+    </section>
+</body>
+</html>

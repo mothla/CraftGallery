@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+ /* ------------- preloader ---------------*/
+ #preloader{
+     background: #fff  url(preloader.gif) no-repeat center;
+     background-size: 35%;
+     height: 100vh;
+     width: 100%;
+     position: fixed;
+     z-index: 100;
+ }   
+/*  --------------- header  ---------------*/
+  .header{
+    height: 100vh;
+   
+   
+    
+  }
+  .video-back{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+ 
+    
+
+}
+
+  nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  nav img{
+      width: 250px;
+      border-radius: 50%;
+      
+  }
+
+  .nav-links{
+      flex: 1;
+      text-align: right;
+
+  }
+
+  .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+  }
+
+  .nav-links ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+  }
+
+  .nav-links ul li ::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #66471e;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+      
+  }
+  .nav-links ul li:hover ::after{
+   width: 100%;
+
+
+  }
+
+  .text-box{
+      width: 90%;
+      color: snow;
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(-50%,-50);
+      text-align: center;
+  }
+
+  .text-box h1{
+    font-size: 45px;
+  }
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(163, 72, 12);
+    border: 3px solid rgb(163, 72, 12);
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover{
+    border: 1px solid #b64f20;
+    color: #fff;
+    background: #b64f20;
+    
+    transition: 1s;
+  }
+#background{
+    background: #efefef;
+}
+
+#home-1{
+    color: rgb(37, 16, 2);
+    font-weight: 600;
+} 
+
+  /*  ---------------- our event  ---------------  */
+ .title-text{
+     text-align: center;
+     padding-bottom: 70px;
+ }
+ .title-text p  {
+     margin: auto;
+     font-size: 20px;
+     color :rgba(167, 94, 51, 0.89);
+     font-weight: bold;
+     position: relative;
+   
+ }
+ .title-text h4{
+    color :rgba(167, 94, 51, 0.89);
+ }
+ .title-text h1 {
+     font-size: 45px;
+     color: saddlebrown;
+ }
+  .events{
+      width: 100%;
+      padding: 70px 0;
+      background: #efefef;
+  }
+  .boxes{
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+  }
+  .single-box{
+      flex: 28%;
+      text-align: center;
+      border-radius: 7px;
+      margin-bottom: 35px;
+      margin-left: 20px;
+      color: snow;
+      position: relative;
+  }
+  .single-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    
+
+  }
+ .single-box:hover{
+    box-shadow: 0 0 20px 0px rgba(80, 79, 79, 0.856);
+   
+
+ }
+  .overlay{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      border-radius: 7px;
+      cursor: pointer;
+      background: linear-gradient(rgba(136, 80, 8, 0.7),rgba(165, 99, 46, 0.7));
+      opacity: 0;
+      transition: 1s;
+  }
+  .single-box:hover .overlay{
+      opacity: 1;
+     }
+
+ .event-desc{
+     width: 80%;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     opacity: 0;
+     transition: 1s;
+     font: rgb(241, 238, 207);
+ }
+
+ .single-box:hover .event-desc{
+     bottom: 40%;
+     opacity: 1;
+
+
+ }
+ 
+
+/*  --------------- courses   ---------------*/
+.courses{
+  width: 100%;
+  padding: 50px 0px;  
+  
+}
+ 
+.course-title{
+text-align: center;
+padding-bottom: 40px;
+
+}
+.course-title p{
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(87, 46, 8);
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.course-title h1{
+    font-size: 40px;
+    color: chocolate;
+}
+.aboutcourse{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(228, 215, 192);
+    padding: 25px;
+    border-radius: 10px;
+}
+.aboutcourse:hover{
+    box-shadow: 0 0 20px 0px rgba(80, 79, 79, 0.856);
+    border-radius: 5px;
+}
+.p1{
+    flex-basis: 50%;
+    width: 40%;
+  color: #fff;
+ 
+    
+}
+.p1 pre{
+    color: chocolate;
+}
+.course-vidio{
+    flex-basis: 50%;
+    margin: auto;
+    
+   
+}
+.course-vidio iframe{
+    width: 100%;
+}
+#click{
+
+   
+        background-color: rgb(206, 173, 103); 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 5px;
+      
+}
+
+/* --------------  sponser ----------------*/
+.Sponsors{
+    width: 100%;
+      padding: 70px 0;
+      background: #efefef;
+   
+    
+}
+
+.Sponsors img{
+    margin-left: 35%;
+    border-radius: 5%;
+    
+ 
+    
+    
+}
+.Sponsors h1 {
+    color:saddlebrown;;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: rgb(61, 54, 46) 5px;
+    
+}
+  /*  --------------- Footer  ---------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(107, 65, 18);
+    }
+    
+    .footer h4{
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    
+    .footer p{
+        font-weight: 200;
+        color: darkgray;
+    }
+    .footer ul, li{
+        color: darkgray;
+        text-align: center;
+        font-weight: 200;
+    }
+    .icons-fot .fa{
+    color: rgba(167, 94, 51, 0.89);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    }
+    .icons-fot .fa:hover {
+        transform: scale(1.3);
+    }
+    
+    

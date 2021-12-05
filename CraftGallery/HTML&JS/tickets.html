@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport"  initial-scale=1.0">
+ <meta charset="utf-8">
+ <title> Craft Gallery</title>
+ <link rel="stylesheet" href="tickets.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700
+&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome free/4.7.0/css/fontawesome-free.min.css">
+ <script src="https://kit.fontawesome.com/3458dc9cc6.js"
+crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</head>
+<body>
+<!------------- header --------------->
+<section class="header-ticket">
+ <nav>
+ <a href="home.html"> <img src="LOgo.png"> </a>
+ 
+ <div class="nav-links">
+ <ul>
+ <li> <a href="home.html">Home</a> </li>
+ <li> <a href="about.html">About</a> </li>
+ <li> <a href="tickets.html" id="tickets-1">TICKETS</a> </li>
+ <li> <a href="courses.html">Courses</a> </li>
+ <li> <a href="contact.html">Contact</a> </li>
+ 
+ </ul>
+ </div>
+ </nav>
+ 
+ <div class="text-box">
+ <h1> GET INSPIRED BY VISITING OUR GALLERY!</h1>
+ </div>
+ </section>
+ <!--------tickects section------>
+ <div class="ticketcontainer">
+ <!-------- open time ad --------->
+ <div class="open-time-sect">
+ <br><h2 id="title">Open Time </h2><br><br>
+ <h3 class="haeding-days">Every day!</h3>
+ <br>
+ <p>Opening time at 9AM</p><br>
+ <br>
+ <p>Closing time at 10PM </p>
+ <br>
+ <h4 >Note: children are not allowed to enter! </h4>
+</div>
+<!-------- ticket form ---------->
+<div class="ticket-form">
+ <form class="formtic" action="ticket.php" method="post">
+ <h2 class="heading-brown">Get your ticket Now</h2>
+ <div class="field">
+ <p> Name: </p>
+ <input type="text" id="name" placeholder="your full name"name="FullName" required>
+ </div>
+ <div class="field">
+ <p>Email:</p>
+ <input type="email" placeholder="e.g a@gmail.com"name="Temail"required>
+ </div>
+ <div class="field">
+ <p>which day would you like to visit us?</p>
+ <input type="date" id="day"name="date" onclick="setday()"required>
+ </div>
+ <div class="field">
+ <p>How many tikects do you want to book?</p>
+ <input type="number" id="number-of-guest"name="numOfTic"min="1" max="15" required>
+ </div>
+ <input type="submit" value="Book!" id="sub-btn">
+ </form>
+</div>
+</div>
+<!--------Footer------>
+<section class="footer">
+ <h4>About Us</h4>
+ <p> &copy; 2021 Craft Gallery Riyadh | webdesign by :
+ <ul><br>
+ <li> - Mothla Alnoshan </li>
+ <li> - Feda Alnafisah </li>
+ <li> - Areen Alquayid </li>
+ <li> - Sara Alghofaily </li>
+ <li> - Lamees Aloqlan </li>
+ </ul>
+ </p>
+ <br>
+ <div class="icons-fot">
+ <i class="fa fa-facebook" ></i>
+ <a href="https://twitter.com/craftgallery_sa?s=21"><i class="fa fa-twitter"
+></i></a>
+ <a href="https://instagram.com/craftgallery.sa?utm_medium=copy_link"><i
+class="fa fa-instagram"></i></a>
+ <i class="fa fa-envelope"></i>
+ </div>
+</section>
+</body>
+</html> 

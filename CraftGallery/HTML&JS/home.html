@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Craft Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome-free/4.7.0/css/fontawesome-free.min.css">
+    <script src="https://kit.fontawesome.com/3458dc9cc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+  
+</head>
+
+<body>
+<!------------- preloader -------------->    
+<div id="preloader"> </div>
+
+<script>
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){loader.style.display= "none";
+    });
+
+</script>
+
+<!-------------  header  --------------->
+<section class="header">
+
+    <video autoplay loop class="video-back" muted plays-inline >
+        <source src="IMG_9257.MP4" type="video/mp4">
+    </video>
+
+<nav>
+    <a href="home.html"> <img src="LOgo.png">  </a>
+    <div class="nav-links">
+        <ul>
+           <li> <a  href="home.html" id="home-1">HOME</a></li>
+           <li> <a  href="about.html">About</a></li>
+           <li> <a  href="tickets.html">Tickets</a></li>
+           <li> <a  href="courses.html">Courses</a></li>
+           <li> <a  href="contact.html">Contact</a> </li>
+     
+        </ul>
+    </div>
+    
+</nav>
+
+<div class="text-box">
+    <h1> THE LARGEST POTTERY GALLERY </h1>
+<br>
+    <a href="#down" class="hero-btn"> visit us to know more</a>
+</div>
+
+</section>
+
+<!------------  our events  ---------------->
+<div id="background">
+
+<section id="down" class="events">
+
+<div class="title-text">
+    <h1> OUR EVENTS  </h1>
+    <p> We Are The First And Largest Pottery Gellary In KSA <br>
+     </p>
+     <h4>To Enjoy Our Events Visit Us !</h4>
+</div>
+
+<div class="boxes">
+
+    <div class="single-box">
+        <img src="e1.jpg">
+        <div class="overlay"></div> 
+        <div class="event-desc">
+            <h3>We make creativity </h3>
+        </div>
+    </div>
+
+
+    <div class="single-box">
+        <img src="e2.jpg">
+        <div class="overlay"></div>
+        <div class="event-desc">
+            <h3>We renew your passion</h3>
+        </div>
+    </div>
+
+
+    <div class="single-box">
+        <img src="e3.jpg">
+        <div class="overlay"></div>
+        <div class="event-desc">
+            <h3>We inspire you</h3>
+        </div>
+    </div>
+
+
+    <div class="single-box">
+        <img src="e4.jpg">
+        <div class="overlay"></div>
+        <div class="event-desc">
+            <h3>We give you the opportunity to meet the creators</h3>
+        </div>
+     </div>
+
+
+    <div class="single-box">
+        <img src="e5.jpg">
+        <div class="overlay"></div>
+        <div class="event-desc">
+            <h3>We help you to try a new hobby</h3>
+        </div>
+    </div>
+
+
+    <div class="single-box">
+        <img src="e6.jpg">
+        <div class="overlay"></div> 
+        <div class="event-desc">
+            <h3>Let's have a good time</h3>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!---------------- courses ---------------->
+
+<section class="courses">
+<div class="course-title">
+    <p>COURSES</p>
+    <h1 >JOIN WITH US !</h1> <br>
+</div>
+   
+
+
+<div class="aboutcourse"> 
+<div class="p1">
+
+        <h1>why you should learn with us?</h1> 
+<pre> 
+    Our philosophy is to find stillness in the pottery process.
+    All of our sessions are an opportunity to slow down and
+    experience the therapeutic benefits that come with having
+     your hands covered in clay.
+    We tell all of our students & members to focus
+     on the experience, rather than the end product as this 
+     is what sets you up for a calming session, spent growing
+     from mistakes and letting go of attachments & expectations.
+</pre>
+<br>
+    <h4>EXPLORE OUR POTTERY COURSES</h4> 
+    <button id="click" onClick="myOnClickFn()">click here!</button>
+        <script>
+        function myOnClickFn(){
+        document.location.href="courses.html"; }
+       </script> 
+
+</div>
+
+<div class="course-vidio">
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VGjRvmKpjWA"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+</div>
+
+</div>
+</section>
+
+<!-----------  Official Sponsors  -------------->
+
+<div class="Sponsors">
+    <h1>OFFICIAL SPONSORS</h1> <br>
+<script>
+    var i =0; //start point
+    var images = []; //array
+    var time = 2000;
+
+    //image list
+    images[0]='s1.png';
+    images[1]='s2.png';
+    images[2]='s3.jpg';
+    images[3]='s4.jpg';
+
+    //change image 
+    function changeImg() {
+      document.slide.src = images[i];
+      if (i < images.length - 1){
+          i++; }
+          else{
+              i=0; }
+              setTimeout("changeImg()", time);
+          } //end function changeImg
+
+          window.onload= changeImg;
+</script>
+
+<img  name="slide" width="400" height="200">
+
+</div>
+</div> <!--background id -->
+
+
+<!-------------  Footer   ------------->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p> &copy; 2021 Craft Gallery Riyadh | webdesign by :
+         <ul><br>
+          <li> - Mothla Alnoshan </li>
+          <li> - Feda Alnafisah </li>
+          <li> - Areen Alquayid </li>
+          <li> - Sara Alghofaily </li>
+          <li> - Lamees Aloqlan </li>
+        </ul>
+    </p>
+    <br>
+    <div class="icons-fot">
+        <i class="fa fa-facebook" ></i>
+        <a href="https://twitter.com/craftgallery_sa?s=21"><i class="fa fa-twitter" ></i></a>
+        <a href="https://instagram.com/craftgallery.sa?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+        <i class="fa fa-envelope"></i>
+    </div>
+</section>
+
+</body>
+</html>
